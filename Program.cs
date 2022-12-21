@@ -1,19 +1,13 @@
-﻿int a = 5;
-int b = 7;
-
-if(a > b)
+﻿int a = 44;
+int b = 5;
+int c = 78;
+int max = a;
+if(max < b)
 {
-    Console.Write($"Max = {a}\n");
+    max = b;
 }
-else
+if(max < c)
 {
-    Console.Write($"Max = {b}\n");
+max = c;
 }
-if(a > b)
-{
-    Console.Write($"Min = {b}\n");
-}
-else
-{
-    Console.Write($"Min = {a}\n");
-}
+Console.Write($"Max = {max}\n");
