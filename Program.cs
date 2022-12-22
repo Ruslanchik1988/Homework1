@@ -1,19 +1,12 @@
-﻿int a = 5;
-int b = 7;
-
-if(a > b)
+﻿int a;
+Console.Write("Введите число ");
+int.TryParse(Console.ReadLine(), out a);
+int b = a % 2;
+if(b == 0)
 {
-    Console.Write($"Max = {a}\n");
+    Console.WriteLine("Да");
 }
 else
 {
-    Console.Write($"Max = {b}\n");
-}
-if(a > b)
-{
-    Console.Write($"Min = {b}\n");
-}
-else
-{
-    Console.Write($"Min = {a}\n");
+    Console.WriteLine("Нет");
 }
