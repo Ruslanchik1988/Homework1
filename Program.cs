@@ -1,19 +1,9 @@
-﻿int a = 5;
-int b = 7;
-
-if(a > b)
+﻿int N;
+int index = 2;
+Console.Write("Введите число ");
+int.TryParse(Console.ReadLine(), out N);
+while(index <= N )
 {
-    Console.Write($"Max = {a}\n");
-}
-else
-{
-    Console.Write($"Max = {b}\n");
-}
-if(a > b)
-{
-    Console.Write($"Min = {b}\n");
-}
-else
-{
-    Console.Write($"Min = {a}\n");
+    Console.Write($"{index} \n");
+    index = index + 2;
 }
